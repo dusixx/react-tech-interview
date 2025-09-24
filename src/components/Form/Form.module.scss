@@ -1,0 +1,14 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.btn {
+  @extend %btn-primary;
+}
+
+.error {
+  font-size: 10px;
+  color: rgb(189 25 25);
+}

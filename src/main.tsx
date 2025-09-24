@@ -1,4 +1,5 @@
 import { ErrorBoundary, ErrorFallback } from '@components/ErrorBoundary/index.ts';
+import { ThemeProvider } from '@components/providers/ThemeProvider.tsx';
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
@@ -12,7 +13,9 @@ createRoot(document.querySelector(ROOT_SELECTOR)!).render(
   <StrictMode>
     <BrowserRouter>
       <ErrorBoundary FallbackComponent={ErrorFallback}>
-        <App />
+        <ThemeProvider>
+          <App />
+        </ThemeProvider>
       </ErrorBoundary>
     </BrowserRouter>
   </StrictMode>,
