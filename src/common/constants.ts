@@ -13,6 +13,10 @@ export const IconLocation = IoLocationSharp;
 
 export enum RoutePath {
   Home = '/',
+  Catalog = '/catalog',
+  Product = '/catalog/:id',
+  Redirect = '/redirect',
+  Todo = '/todo',
   Error = '*',
 }
 

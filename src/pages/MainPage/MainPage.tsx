@@ -2,7 +2,7 @@ import { CounterBtnClass, CounterBtnFunc } from '@components/CounterBtn/CounterB
 import { DelayedCounter } from '@components/etc/DelayedCounter.tsx';
 import { AuthForm } from '@components/Form/AuthForm/AuthForm';
 import { Form } from '@components/Form/Form.tsx';
-import { ListClass, ListFunc } from '@components/List/List.tsx';
+import { ListClass, ListFunc } from '@components/List/index.ts';
 import { useTheme } from '@components/providers/ThemeProvider.tsx';
 import { WelcomeClass, WelcomeFunc } from '@components/Welcome/Welcome.tsx';
 import type { ReactNode } from 'react';
